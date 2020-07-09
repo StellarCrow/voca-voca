@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+script:
+- npm test
+- npm run build
+branches:
+  only:
+  - master
+deploy:
+  provider: heroku
+  app: voca-voca
+  api_key:
+    secure: abyBQkipYgxogac7q4e+3OkZuajbB+HgubWMwgWsJws357YorNWmR1ErFMN5uPgcT+LXSiYDee/9PIJWqnZUajJtP+hFvGmPIDCZxlGmaxAYtjWjqEodoDhwsVFcWlDIO9IwDbNzGcMhuzBTwcVJzqTAl+V1ICPFusIsc2eNYhx4rq2Uc8pPzwGp/GPYO5ft71MTy5PPB+GXRW45K43M7KVlAEiZnuruKwdNm+wM2RyAUlabwALchMu6ffHdlKns8bZZfmplmbnCZE5itRxekUBrAhKvJPITF6j3gONLegGHT6bMYWIwyMDwVXr7k4SxQrtkyh3KAL8tjoTDcIPdEXuRH50DW1QUUcuWRdvDoAjXBvg9QH/D5QVHYW+rOVIBaQBpKD379SYF5jB8bBr6SlfUzdVCuOek1/L54JYryp0VwB8GDjAUQmEi+R+aUyfbJV56x7zrinh7/oTc9dALFhenMxpovU6XHV4a7ryoc2A2yh67OCV3c674QCMLSn5+dGt3RWWaZ5cJlr6brDM/JnuQoKa2W2RF3bucyv+jiBDk1RvA8a5CXKVUunj8xaiUnxsRDQL8iSI1snf5OjxBXmS747nOq/Hm6zWBGOxPzS413NzVxcSC6ExsNLehIfAaN8TF4JuH9Us2sdk30nRdmTjwgnO2pnhnJZLHxMagliw=
