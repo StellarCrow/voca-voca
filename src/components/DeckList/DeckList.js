@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {getDecks} from "../../actions/deckActions";
 import PropTypes from 'prop-types';
-import Deck from "../Deck/Deck";
+import DeckCard from "../DeckCard/DeckCard";
 
 class DeckList extends Component {
 
@@ -16,7 +16,7 @@ class DeckList extends Component {
             <ul className='list'>
                 {decks.map(deck => {
                     return <li key={deck.id} className='list__item'>
-                        <Deck deck={deck} />
+                        <DeckCard deck={deck} />
                     </li>
                 })}
             </ul>

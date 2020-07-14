@@ -1,22 +1,27 @@
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faCheckSquare} from '@fortawesome/free-solid-svg-icons'
 
 import {Provider} from 'react-redux';
 import store from './store';
 
-import DeckList from "./components/DeckList/DeckList";
+import {Switch, Route, BrowserRouter} from "react-router-dom";
+import NotFound from "./containers/NotFound/NotFound";
+import Home from "./containers/Home/Home";
+import DeckPage from "./containers/DeckPage/DeckPage";
 
 library.add(faCheckSquare);
 
 function App() {
     return (
         <Provider store={store}>
-            <div className="App">
-                <h1>Hey <FontAwesomeIcon icon='check-square'/></h1>
-                <DeckList></DeckList>
-            </div>
+            <BrowserRouter>
+                <Switch>
+                    <Route path='/' exact component={Home}/>
+                    <Route path='/deck/:id' component={DeckPage}/>
+                    <Route path='*' component={NotFound}/>
+                </Switch>
+            </BrowserRouter>
         </Provider>
     );
 }
