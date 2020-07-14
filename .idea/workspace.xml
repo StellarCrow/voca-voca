@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90d0ff25-7457-4dec-9a28-508a74fff627" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Deck/Deck.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Deck/Deck.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Deck/Deck.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Deck/Deck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Deck/Deck.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Deck/Deck.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +77,8 @@
       <workItem from="1594312746152" duration="3028000" />
       <workItem from="1594366728699" duration="5000" />
       <workItem from="1594551077620" duration="1815000" />
-      <workItem from="1594631884838" duration="3517000" />
+      <workItem from="1594631884838" duration="5754000" />
+      <workItem from="1594738615452" duration="1726000" />
     </task>
     <servers />
   </component>
