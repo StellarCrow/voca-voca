@@ -1,4 +1,68 @@
 @import '../../styles/variables';
-.deck {
 
+$card-gap: 5px;
+
+.deck {
+  box-sizing: border-box;
+  border: 1px solid $gray;
+  border-radius: 1em;
+  padding: 7% 3%;
+  min-height: 200px;
+  background: url("../../assets/images/coconut.jpg") no-repeat center top / cover;
+  position: relative;
+  transition: 0.5s ease, 0.5s ease;
+  cursor: pointer;
+  box-shadow: $card-gap 0 0 $gray--light, $card-gap * 2 0 0 $gray;
+
+  //&:before,
+  //&::after {
+  //  content: '';
+  //  position: absolute;
+  //  height: 100%;
+  //  left: $card-gap;
+  //  right: -$card-gap;
+  //  bottom: 0;
+  //  top: 0;
+  //  border: inherit;
+  //  border-radius: inherit;
+  //  z-index: -1;
+  //  transition: 0.5s ease, 0.5s ease;
+  //}
+  //
+  //&::after {
+  //  left: $card-gap * 2;
+  //  right: -$card-gap * 2;
+  //  bottom: 0;
+  //  top: 0;
+  //
+  //}
+
+  &:hover {
+    transform: translateX(-10%);
+    z-index: 2;
+    box-shadow: $card-gap * 2 0 0 $gray--light, $card-gap * 4 0 0 $gray;
+  }
+
+  //&:hover:before,
+  //&:hover::after {
+  //  transform: translateX(3%);
+  //  z-index: -1 !important;
+  //}
+  //
+  //&:hover::after {
+  //  transform: translateX(6%);
+  //}
+
+  &__name {
+    padding: 1.5em 0.5em;
+    background: rgba($gray--light, 0.7);
+    font-weight: $semi-bold;
+    font-family: $ff-secondary;
+  }
+
+  &__words {
+    padding: 0.5em 0.3em;
+    background: rgba($gray--dark, 0.7);
+    color: $gray--light
+  }
 }
