@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90d0ff25-7457-4dec-9a28-508a74fff627" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/containers/DeckPage/DeckPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Home/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/NotFound/NotFound.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Deck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/JsonService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/LocalStorageService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Deck/Deck.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckCard/DeckCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Deck/Deck.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckCard/DeckCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeckList/DeckList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckList/DeckList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../aaaaaaaaaaaaaaaaaaaaaaaaaa" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../vocabulary-2020-07-15T09_47_30.124Z.json" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -82,7 +78,8 @@
       <workItem from="1594366728699" duration="5000" />
       <workItem from="1594551077620" duration="1815000" />
       <workItem from="1594631884838" duration="5754000" />
-      <workItem from="1594738615452" duration="9025000" />
+      <workItem from="1594738615452" duration="9926000" />
+      <workItem from="1594806058331" duration="5193000" />
     </task>
     <servers />
   </component>
