@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import DeckList from "../../components/DeckList/DeckList";
 import './Home.scss';
+import Statisctics from "../../components/Statistics/Statisctics";
 
 class Home extends Component {
     render() {
@@ -19,14 +20,12 @@ class Home extends Component {
                 <div className="home__sidebar">
                     <div className="home__progress">
                         <div className="home__heading">Progress</div>
+                        <Statisctics></Statisctics>
                     </div>
                     <div className="home__import">
-                        <button className='button button--primary'>Import Deck</button>
+                        <button type='button' className='button button--primary'>Import Deck</button>
                     </div>
                 </div>
-
-
-
             </section>
         );
     }

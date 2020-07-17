@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90d0ff25-7457-4dec-9a28-508a74fff627" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/images/avocado.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/coconut.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/egg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/grapefruit.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/leaves.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/lemon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/sunflower.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/watermelon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DeckList/DeckList.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Home/Home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Statistics/Statisctics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StatisticsItem/StatisticsItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/_buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeckCard/DeckCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckCard/DeckCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeckCard/DeckCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckCard/DeckCard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeckList/DeckList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckList/DeckList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Deck.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Deck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +79,8 @@
       <workItem from="1594551077620" duration="1815000" />
       <workItem from="1594631884838" duration="5754000" />
       <workItem from="1594738615452" duration="9926000" />
-      <workItem from="1594806058331" duration="13176000" />
+      <workItem from="1594806058331" duration="14620000" />
+      <workItem from="1594988108748" duration="2602000" />
     </task>
     <servers />
   </component>
