@@ -1,18 +1,12 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {getDecks} from "../../actions/deckActions";
-import PropTypes from 'prop-types';
+import React from 'react';
 import DeckCard from "../DeckCard/DeckCard";
 import './DeckList.scss';
+import AddDeckButton from "../AddDeckButton/AddDeckButton";
 
-class DeckList extends Component {
+const DeckList = (props) => {
+    const {decks} = props;
 
-    componentDidMount() {
-        this.props.getDecks();
-    }
-
-    render() {
-        const {decks} = this.props.deck;
+    if(decks.length > 0) {
         return (
             <ul className='list'>
                 {decks.map(deck => {
@@ -21,17 +15,16 @@ class DeckList extends Component {
                     </li>
                 })}
             </ul>
-        );
+        )
+    } else {
+        return (
+            <div className='no-decks'>
+                <h3 className="no-decks__title">There are no decks.</h3>
+                <AddDeckButton/>
+            </div>
+        )
     }
+
 }
 
-DeckList.propTypes = {
-    getDecks: PropTypes.func.isRequired,
-    deck: PropTypes.object.isRequired
-};
-
-const mapStateToProps = state => ({
-    deck: state.deck
-});
-
-export default connect(mapStateToProps, {getDecks})(DeckList);
+export default DeckList;

@@ -3,8 +3,18 @@ import DeckList from "../../components/DeckList/DeckList";
 import './Home.scss';
 import Statisctics from "../../components/Statistics/Statisctics";
 
+import {connect} from 'react-redux';
+import {getDecks} from "../../actions/deckActions";
+import PropTypes from 'prop-types';
+
 class Home extends Component {
+
+    componentDidMount() {
+        this.props.getDecks();
+    }
+
     render() {
+        const {decks} = this.props.deck;
         return (
             <section className='home'>
                 <div className="home__container">
@@ -14,7 +24,7 @@ class Home extends Component {
                     </div>
                     <div className="home__decks">
                         <h2 className='home__heading'>My Decks</h2>
-                        <DeckList></DeckList>
+                        <DeckList decks={decks}></DeckList>
                     </div>
                 </div>
                 <div className="home__sidebar">
@@ -31,4 +41,14 @@ class Home extends Component {
     }
 }
 
-export default Home;
+Home.propTypes = {
+    getDecks: PropTypes.func.isRequired,
+    deck: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+    deck: state.deck
+});
+
+export default connect(mapStateToProps, {getDecks})(Home);
+
