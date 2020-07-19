@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {DECK_STYLE} from '../../utils/constants';
 
 const DeckForm = (props) => {
     const styles = DECK_STYLE;
-    const {onChangeStyle} = props;
+    const {onSubmit, changeBackground} = props;
+    const [style, setStyle] = useState('');
+    const [title, setTitle] = useState('');
 
-    const handleChangeStyle = (event) => {
-        const style = event.target.value;
-        onChangeStyle(style);
+    const createDeck = (event) => {
+        event.preventDefault();
+        const deckInfo = {
+            style,
+            title
+        };
+        onSubmit(deckInfo);
     };
 
     const renderStyles = () => {
@@ -23,10 +29,22 @@ const DeckForm = (props) => {
         return stylesList;
     };
 
+    const handleChangeStyle = (event) => {
+        const background = event.target.value;
+        setStyle(background);
+        changeBackground(background);
+
+    };
+
+    const handleInput = (event) => {
+        setTitle(event.target.value);
+    };
+
     return (
         <form className='form'>
-            <input type="text" maxLength={30} className="form__input" name='title' required/>
+            <input type="text" maxLength={30} className="form__input" name='title' onChange={handleInput}/>
             {renderStyles()}
+            <button type='submit' className='button' onClick={createDeck}>Create</button>
         </form>
     )
 };

@@ -1,6 +1,9 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 $card-gap: 5px;
+
+@include background(deck);
 
 .deck {
   box-sizing: border-box;
@@ -8,7 +11,7 @@ $card-gap: 5px;
   border-radius: 1em;
   padding: 7% 3%;
   min-height: 200px;
-  background: url("../../assets/images/coconut.jpg") no-repeat center top / cover;
+  //background: url("../../assets/images/coconut.jpg") no-repeat center top / cover;
   position: relative;
   transition: 0.5s ease, 0.5s ease;
   cursor: pointer;

@@ -1,0 +1,7 @@
+@mixin background($class) {
+  @each $background in $backgrounds {
+    .#{$class}--#{$background} {
+      background: url("../assets/images/#{$background}.jpg")center top / cover;
+    }
+  }
+}

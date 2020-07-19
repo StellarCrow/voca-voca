@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90d0ff25-7457-4dec-9a28-508a74fff627" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AddDeckButton/AddDeckButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DeckForm/DeckForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DialogTemplate/DialogTemplate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DialogTemplate/DialogTemplate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/deckActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/deckActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DeckList/DeckList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckList/DeckList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/deckReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/deckReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddDeckButton/AddDeckButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddDeckButton/AddDeckButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DeckCard/DeckCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckCard/DeckCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DeckCard/DeckCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckCard/DeckCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DeckForm/DeckForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DeckForm/DeckForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DialogTemplate/DialogTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DialogTemplate/DialogTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DialogTemplate/DialogTemplate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DialogTemplate/DialogTemplate.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Deck.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Deck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_variables.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +86,7 @@
       <workItem from="1594806058331" duration="14620000" />
       <workItem from="1594988108748" duration="3429000" />
       <workItem from="1595083546811" duration="1947000" />
-      <workItem from="1595148765984" duration="11099000" />
+      <workItem from="1595148765984" duration="15808000" />
     </task>
     <servers />
   </component>
