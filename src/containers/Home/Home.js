@@ -6,7 +6,6 @@ import Statisctics from "../../components/Statistics/Statisctics";
 import {connect} from 'react-redux';
 import {getDecks} from "../../actions/deckActions";
 import PropTypes from 'prop-types';
-import AddDeckButton from "../../components/AddDeckButton/AddDeckButton";
 
 class Home extends Component {
 

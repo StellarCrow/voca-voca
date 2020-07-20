@@ -5,7 +5,6 @@
 
 .dialog {
   padding: 4% 3%;
-  min-width: 100%;
   box-sizing: border-box;
   min-width: 500px;
 
@@ -14,4 +13,16 @@
     background: rgba($text-color--light, 0.7);
   }
 
+  &__title {
+    font-family: $ff-secondary;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: $bp-small) {
+  .dialog {
+    min-width: 250px;
+  }
 }

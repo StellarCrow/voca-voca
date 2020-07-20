@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import DialogTemplate from "../DialogTemplate/DialogTemplate";
-import {addDeck, getDecks} from "../../actions/deckActions";
+import {addDeck} from "../../actions/deckActions";
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import Deck from "../../entities/Deck";
@@ -21,6 +21,7 @@ class AddDeckButton extends Component {
 
     handleClose = (value) => {
         this.setState({open: false});
+        if(!value) return;
         const {title, style} = value;
         const newDeck = new Deck(title, style);
         this.props.addDeck(newDeck);

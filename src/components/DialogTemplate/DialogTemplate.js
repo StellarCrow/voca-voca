@@ -51,7 +51,7 @@ class DialogTemplate extends Component {
             <Dialog open={this.state.open} onClose={this.handleClose} style={{minWidth: '50%'}}>
                 <div className={this.state.background ? `dialog dialog--${this.state.background}` : 'dialog'}>
                     <div className="dialog__container">
-                        <DialogTitle>Create new Deck</DialogTitle>
+                        <div className="dialog__title">Create new Deck</div>
                         <DeckForm onSubmit={this.createDeck} changeBackground={this.handleChangeBackground}/>
                     </div>
                 </div>

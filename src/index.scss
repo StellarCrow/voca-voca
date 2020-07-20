@@ -34,6 +34,16 @@ body {
   padding: 0;
 }
 
+input {
+  border-radius: 2em;
+  padding: 0.8em 1em;
+  outline: none;
+  border: 1px solid $gray;
+  font-family: $ff-primary;
+  font-weight: $light;
+  box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   height: auto;
