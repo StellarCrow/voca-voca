@@ -5,16 +5,23 @@ import Statisctics from "../../components/Statistics/Statisctics";
 
 import {connect} from 'react-redux';
 import {getDecks} from "../../actions/deckActions";
+import {searchDeck} from "../../actions/searchActions";
 import PropTypes from 'prop-types';
+import SearchForm from "../../components/SearchForm/SearchForm";
 
 class Home extends Component {
 
     componentDidMount() {
         this.props.getDecks();
+
     }
 
+    handleSearch = (query) => {
+        this.props.searchDeck(query);
+    };
+
     render() {
-        const {decks} = this.props.deck;
+        const decks = this.props.decks;
         return (
             <section className='home'>
                 <div className="home__container">
@@ -24,6 +31,7 @@ class Home extends Component {
                     </div>
                     <div className="home__decks">
                         <h2 className='home__heading'>My Decks</h2>
+                        <SearchForm onQueryChange={this.handleSearch}/>
                         <DeckList decks={decks}></DeckList>
                     </div>
                 </div>
@@ -43,12 +51,13 @@ class Home extends Component {
 
 Home.propTypes = {
     getDecks: PropTypes.func.isRequired,
-    deck: PropTypes.object.isRequired
+    searchDeck: PropTypes.func.isRequired,
+    decks: PropTypes.array.isRequired,
 };
 
 const mapStateToProps = state => ({
-    deck: state.deck
+    decks: state.deck.decks.filter(deck => deck.name.includes(state.query))
 });
 
-export default connect(mapStateToProps, {getDecks})(Home);
+export default connect(mapStateToProps, {getDecks, searchDeck})(Home);
 
