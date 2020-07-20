@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.home {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  min-width: 100%;
+  min-height: 100vh;
+
+  &__container {
+    flex: 0 1 50%;
+    padding: 5% 3%;
+    box-sizing: border-box;
+  }
+
+  &__sidebar {
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5% 3%;
+    box-sizing: border-box;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  &__title {
+    font-family: $ff-secondary;
+    font-size: 2.5em;
+  }
+
+  &__heading {
+    font-family: $ff-secondary;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+  }
+
+  &__decks {
+    text-align: center;
+  }
+
+  &__progress {
+    text-align: center;
+  }
+
+}

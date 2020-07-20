@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+
+.form {
+  min-width: 100%;
+
+  &__input {
+    min-width: 100%;
+    margin-bottom: 5%;
+  }
+
+  &__radio {
+    margin-right: 0.5em;
+  }
+
+  &__label {
+    cursor: pointer;
+
+  }
+
+  &__label:first-letter {
+    text-transform: uppercase;
+  }
+
+  &__backgrounds {
+    margin-bottom: 5%;
+  }
+}

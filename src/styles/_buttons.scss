@@ -1,0 +1,19 @@
+.button {
+  border: none;
+  border-radius: 1.5em;
+  padding: 0.8em 1.3em;
+  outline: none;
+  transition: 0.3s ease;
+  font-weight: $light;
+  font-family: $ff-primary;
+  cursor: pointer;
+  background: $gray;
+  color: $text-color--light;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  &:hover {
+    background: $gray--dark
+  }
+
+}
